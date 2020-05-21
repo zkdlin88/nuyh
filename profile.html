@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <style media="screen">
+      .clear {
+        clear: both;
+      }
+      * {
+        margin:0;
+        padding: 0;
+      }
+      body {
+        background-color : #67635c;
+        width : 100%;
+        height : 100%;
+      }
+
+      a {
+        text-decoration : none;
+        font-weight : bold;
+        background:linear-gradient(to right, #f0be59, #de7b4e, #72b255, #63a8db);
+        color: transparent;
+        -webkit-background-clip: text;
+      }
+      li {
+        list-style-type : none;
+      }
+      header {
+        height: 75px;
+        margin-top : 20px;
+      }
+      #wrap {
+        width : 100%;
+        position: relative;
+      }
+      #top {
+
+      }
+      #logo {
+        position : absolute;
+        float : left;
+        top :10px;
+        left:30px;
+      }
+      #menu {
+        display : flex;
+        top : 10px;
+        float : right;
+        justify-content: center;
+        position : relative;
+      }
+
+      #main_menu > li {
+        float : left;
+        position : relative;
+      }
+      #main_menu > li > a {
+        font-size : 12px;
+        color : #f2ebe1;
+        text-align : center;
+        text-decoration: none;
+        letter-spacing: 0.05em;
+        display : block;
+        padding: 14px 56px;
+      }
+
+      #sub_menu {
+        position : absolute;
+        width : 99%;
+        font-size : 10px;
+        color : #68635c;
+        opacity : 0;
+        visibility : hidden;
+        transition : all 0.15s ease-in;
+      }
+
+      #sub_menu > li {
+        text-align : center;
+        padding: 20px;
+        border-bottom : 1px solid #e1d8ca;
+      }
+      #sub_menu > li > a {
+        color : #68635c;
+        text-decoration : none;
+      }
+      #main_menu a:hover {
+        color : #c9c1b4;
+      }
+      #main_menu li:hover #sub_menu {
+        opacity : 1;
+        visibility : visible;
+        background-color : #ece6dc;
+      }
+      #sub_menu > li > a:hover {
+        font-weight : bold;
+        background:linear-gradient(to right, #f0be59, #de7b4e, #72b255, #63a8db);
+        color: transparent;
+        -webkit-background-clip: text;
+      }
+      h1 {
+        font-size : 45px;
+        font-weight : bold;
+        color : #f2ebe1;
+      }
+      h2 {
+        color : #e4ded4;
+        font-weight: bold;
+      }
+      p {
+        color : #ffffff;
+      }
+      #img1 {
+        text-align : center;
+        width : 50%;
+        height : 200px;
+        float : left;
+      }
+      #img2 {
+        width : 50%;
+        height :500px;
+        float : right;
+        padding-top : 10px;
+      }
+
+      #sub {
+        text-align : center;
+        font-size : 13px;
+        margin-top : 30px;
+        margin-right : auto;
+        margin-bottom : 3%;
+        margin-left : auto;
+      }
+      #sub > a:hover {
+        color : #c9c1b4;
+      }
+
+    main {
+      width : 100%;
+      height: 700px;
+      float : center;
+    }
+    section {
+      width : 100%;
+      height : 500px;
+      float : center;
+    }
+    #bh {
+      margin-top : 50px;
+      height : 100px;
+    }
+    #color {
+      color : #67635c;
+    }
+    footer {
+      position: absolute;
+      bottom:0;
+      width:100%;
+      height:60px;
+      color : #b4ada2;
+      text-align: center;
+    }
+    </style>
+
+<meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <div id="wrap">
+
+<header>
+    <div id="logo">
+      <a href="index.html"><img src="./logo2.png" width="150"></a>
+    </div>
+  <nav id="menu">
+    <ul id="main_menu">
+      <li><a href="#.html">PROFILE</a>
+      </li>
+      <li><a href="#">PLANNING</a>
+        <ul id="sub_menu">
+          <li><a href="ike.html">자전거 IoT<br>이크!(IKE)</a></li>
+          <li><a href="dog.html">반려견 배변봉투 지급·수거 <br>키오스크 개똥이</a></li>
+          <li><a href="mamacat.html">'마마캣(mamacat)' 웹사이트<br>UI 리뉴얼 기획서</a></li>
+          </ul>
+        </li>
+      <li><a href="#">DESIGN</a>
+        <ul id="sub_menu">
+          <li><a href="movie.html">영상디자인</a></li>
+          <li><a href="3d.html">3D디자인</a></li>
+          <li><a href="contents.html">콘텐츠디자인</a></li>
+          </ul>
+        </li>
+      <li><a href="#">PROGRAMMING</a>
+      <ul id="sub_menu">
+        <li><a href="work1.html">드로잉 포트폴리오 사이트</a></li>
+        <li><a href="work2.html">비옥(BEOK) 홍보 웹사이트</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">CONTACT</a>
+    </ul>
+  </nav>
+  </header>
+
+<!--헤더-->
+<main>
+
+<section id="bh">
+
+    <div id="img1">
+      <img onmouseover= "this.src='img/me2.png';"
+      onmouseout="this.src='img/me.png';" src="img/me.png" width='500'title=':)'>
+    </div>
+    <div id="img2">
+      <h1>안녕하세요, 다채로운 UXER <br>김태현입니다.</h1> <br><br>
+
+      <h2>PROFILE</h2>
+      <p>NAME : 김태현 (Kim Tae Hyun) <br> BIRTH : 2000.10.05 <br> MAJOR : 계원예술대학교 디지털미디어디자인과 (기획 세부전공)
+      <br>PHONE : 010-9665-8961 <br> E-MAIL : kth8961@gmail.com <br> ADDRESS : 인천광역시 서구 가정1동</p><br>
+
+      <h2>SKILL</h2>
+      <p>Photoshop &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<img src="img/photo.png" width="80">
+        <br> Illustrator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/ill.png" width="80">
+        <br> Primiere Pro &nbsp;&nbsp; &nbsp;<img src="img/pri.png" width="80">
+        <br> After Effect &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/Affect.png" width="80">
+        <br> Lightroom &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/light.png" width="80">
+        <br> Xd &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/xd.png" width="80">
+        <br> PowerPoint &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/power.png" width="80"><br><br>
+
+      <h2>INTRODUCTION</h2>
+      <p>안녕하세요. 다채로운 UXER, 김태현입니다. <br> 지난 1년의 저는 한 분야에만 매여있는 것이 아닌, 다양한 프로그램과 다양한 분야를 시도하며 새로운 경험과 능력을 쌓았습니다.
+        <br>작업물의 주제 역시 공익적인, 개인적인 주제에 모두 도전하면서 다양한 사용자들의 이야기를 들을 수 있었습니다.<br>
+        대입 전까지는 해보지 못한 경험과 시도가 있었기에 지난 1년의 작업물을 담은 웹사이트의 주제를 '다채로운' 이라는 단어로 수립하게 되었습니다.
+        <br>앞으로도 저는 꾸준히 새로운 경험으로 저 자신을 채워 나갈 것입니다.
+        더불어 소리가 잘 닿지 않는 사용자의 이야기를 제일 먼저 귀담아 듣는, <br>소통하는 UXER가 되는 것을 목표로 노력하겠습니다.</p>
+    </div>
+
+</section>
+
+</main>
+
+<div class="clear"></div>
+  <footer>
+    <a href="https://www.youtube.com/channel/UC0Dw7bZ63CDYalt7CqVCtEQ"><img src="youtube.png" width="60"></a>
+    <a href="https://www.instagram.com/___zeekm/"><img src="instagram.png" width="65"></a>
+    <br>COPYRIGHT © 2020 KIMTAEHYUN. ALL RIGHTS RESERVED
+  </footer>
+</div>
+  </body>
+</html>
